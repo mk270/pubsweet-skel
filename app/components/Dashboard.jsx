@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom'
 import AuthenticatedComponent from 'pubsweet-client/src/components/AuthenticatedComponent'
 
 import ConnectedNavigation from './Navigation/ConnectedNavigation'
+import ImageManager from './ImageManager/ImageManager'
 import HelloWorld from './HelloWorld'
 import KitchenSink from './KitchenSink'
 
@@ -15,6 +16,7 @@ const Dashboard = () => (
         <Redirect exact path="/dashboard" to="/dashboard/hello-world" />
         <Route component={HelloWorld} path="/dashboard/hello-world" />
         <Route component={KitchenSink} path="/dashboard/kitchen-sink" />
+        <Route component={ImageManager} path="/dashboard/image-manager" />
       </Switch>
     </AuthenticatedComponent>
   </>

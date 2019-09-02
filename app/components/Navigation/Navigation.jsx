@@ -8,6 +8,7 @@ const Navigation = ({ logoutUser, currentUser, client }) => {
   const links = [
     <Action to="/dashboard/hello-world">Hello World</Action>,
     <Action to="/dashboard/kitchen-sink">Kitchen Sink</Action>,
+    <Action to="/dashboard/image-manager">Prototype IM</Action>
   ]
 
   return (
